@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node ./node_modules/babel-cli/bin/babel-node.js src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ./src/*"
+    "lint": "eslint ./src/*",
+    "build": "babel src -d lib"
   },
   "author": "Pierre-Edouard Lieb <pe@recast.ai> (https://github.com/plieb/)",
   "license": "ISC",
