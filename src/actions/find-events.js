@@ -13,7 +13,7 @@ export default async function findEvents(res) {
   console.log(location)
   console.log('======================================')
   if (location) {
-    replies.push(formatter.formatMsg(`Looking for meetups near ${location.formatted}`))
+    replies.push(formatter.formatMsg(`Looking for meetups near ${location.formatted} :)`))
     const response = await agent('GET', `https://api.meetup.com/recommended/events?key=${process.env.MEETUP_API_KEY}&lat=${location.lat}&long=${location.lng}`)
     const meetups = response.body
     if (meetups.length) {
